@@ -1,0 +1,140 @@
+/* FACE OF CARD */
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#180326, #360259);
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+}
+
+.main-container{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chip-and-number-logo{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.chip-and-number-logo img{
+    width: 100px;
+}
+
+.card{
+    position: absolute;
+    background-color: #721AFF;
+    width: 600px;
+    height: 350px;
+    justify-content: space-around;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card .chip-and-number{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.card .chip-and-number img{
+    height: 70px;
+}
+
+.card .name{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 57px;
+    padding-right: 30px;
+}
+
+.card .logo{
+    display: flex;
+    height: 60px;
+    justify-content:space-between;
+    padding-left: 57px;
+    padding-right: 25px;
+    align-items: center;
+}
+
+.card .logo img{
+    height: 50px;
+}
+
+/* FORM */
+
+.dataContainer{
+    position: fixed;
+    top: 300px;
+    background-color: whitesmoke;
+    color: black;
+    height:600px;
+    width: 700px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.dataContainer .inContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+    width: 90%;
+}
+
+.dataContainer .inContainer input{
+    width: 90%;
+    height: 35px;
+    border: 2px solid rgba(0, 0, 0, 0.219);
+    padding: 10px;
+}
+
+.dataContainer .inContainer .lastFields{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dataContainer .inContainer .lastFields input{
+    width: 150px;
+    display: flex;
+}
+
+.dataContainer .inContainer .lastFields div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 230px;
+    
+}
+
+.dataContainer .inContainer .lastFields div span{
+    padding-left: 20px;
+}
