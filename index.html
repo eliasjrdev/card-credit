@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>card faces</title>
     <link rel="stylesheet" href="card-faces.css">
+    <link rel="stylesheet" href="teste.css">
 </head>
 <body>
-    <div  class="flip" id="main-container">
-        <div class="face" id="frontCard" >
+    <div class="flip" id="mainContainer">
+        
+        <div class="face" id="frontCard">
             <div class="chip-and-number-logo">
                 <img src="images/css-logo-removebg-preview.png" alt="logo-image" >
             </div>
@@ -31,15 +33,26 @@
             <div class="logo">
                 <span>00/00/0000</span>
                 <img src="images/elo-servicos-sa-logo-3CAEF69C1F-seeklogo.com.png" alt="image-logo">
-            </div>
+            </div> 
+        </div>
+        <div id="backCard" class="face">
             
+            <div class="inputCvv">
+                <div class="cvvNumber">
+                    cvv
+                    <div>
+                        123
+                    </div>
+                </div>
+            </div>
+
+            <div class="magneticBar">
+
+            </div>
         </div>
-        <div class="face" id="backCard" >
-            BACK
-        </div>
+        
     </div>
 
-    <!-- 
     <div class="dataContainer">
         <div class="inContainer">
             <span>Number Card</span>
@@ -56,6 +69,6 @@
             </div>
         </div>
     </div>
-    -->
 </body>
+    <script src="cardEfect.js"></script>
 </html>
