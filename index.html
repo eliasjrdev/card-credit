@@ -8,28 +8,8 @@
     <link rel="stylesheet" href="card-faces.css">
 </head>
 <body>
-    <div class="main-container">
-        
-        <div class="dataContainer">
-            <div class="inContainer">
-                <span>Number Card</span>
-                <input type="text" name="numberCard" id="numberCard">
-                <span>Name Card</span>
-                <input type="text" name="nameCard" id="nameCard">
-                <span>Validity date</span>
-                <div class="lastFields">
-                    <input type="month" name="validityDate" id="validityDate">
-                    <div>
-                        cvv
-                        <input type="text" name="cvvCard" id="cvvCard">
-                    </div>
-                </div>
-            </div>
-
-            
-        </div>
-
-        <div class="card">
+    <div  class="flip" id="main-container">
+        <div class="face" id="frontCard" >
             <div class="chip-and-number-logo">
                 <img src="images/css-logo-removebg-preview.png" alt="logo-image" >
             </div>
@@ -52,7 +32,30 @@
                 <span>00/00/0000</span>
                 <img src="images/elo-servicos-sa-logo-3CAEF69C1F-seeklogo.com.png" alt="image-logo">
             </div>
+            
+        </div>
+        <div class="face" id="backCard" >
+            BACK
         </div>
     </div>
+
+    <!-- 
+    <div class="dataContainer">
+        <div class="inContainer">
+            <span>Number Card</span>
+            <input type="text" name="numberCard" id="numberCard">
+            <span>Name Card</span>
+            <input type="text" name="nameCard" id="nameCard">
+            <span>Validity date</span>
+            <div class="lastFields">
+                <input type="month" name="validityDate" id="validityDate">
+                <div>
+                    cvv
+                    <input type="text" name="cvvCard" id="cvvCard">
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
 </body>
 </html>

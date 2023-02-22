@@ -15,11 +15,11 @@ body{
     font-size: 25px;
 }
 
-.main-container{
+#main-container{
     padding-top: 30px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
 }
 
 .chip-and-number-logo{
@@ -37,8 +37,7 @@ body{
     width: 100px;
 }
 
-.card{
-    position: absolute;
+#frontCard{
     background-color: #721AFF;
     width: 600px;
     height: 350px;
@@ -47,9 +46,10 @@ body{
     display: flex;
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: rotateY(180deg);
 }
 
-.card .chip-and-number{
+#frontCard .chip-and-number{
     height: 60px;
     display: flex;
     align-items: center;
@@ -58,11 +58,11 @@ body{
     padding-right: 20px;
 }
 
-.card .chip-and-number img{
+#frontCard .chip-and-number img{
     height: 70px;
 }
 
-.card .name{
+#frontCard .name{
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -71,7 +71,7 @@ body{
     padding-right: 30px;
 }
 
-.card .logo{
+#frontCard .logo{
     display: flex;
     height: 60px;
     justify-content:space-between;
@@ -80,11 +80,31 @@ body{
     align-items: center;
 }
 
-.card .logo img{
+#frontCard .logo img{
     height: 50px;
 }
+/* BACK OF THE CARD */
 
-/* FORM */
+#backCard{
+    background-color: #391474;
+    width: 600px;
+    height: 350px;
+    justify-content: space-around;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    visibility: hidden;
+}
+
+.face{
+    display: flex;
+    position: absolute;
+}
+
+.flip{
+    transform: rotateY(180deg);
+}
+
+/* FORM 
 
 .dataContainer{
     position: fixed;
@@ -137,4 +157,4 @@ body{
 
 .dataContainer .inContainer .lastFields div span{
     padding-left: 20px;
-}
+}*/
