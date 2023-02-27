@@ -44,8 +44,8 @@ body{
 
 #frontCard{
     background-color: #721AFF;
-    width: 600px;
-    height: 350px;
+    width: 500px;
+    height: 250px;
     justify-content: space-around;
     border-radius: 12px;
     display: flex;
@@ -64,7 +64,7 @@ body{
 }
 
 #frontCard .chip-and-number img{
-    height: 70px;
+    height: 60px;
 }
 
 #frontCard .name{
@@ -78,22 +78,24 @@ body{
 
 #frontCard .logo{
     display: flex;
-    height: 60px;
+    height: 80px;
     justify-content:space-between;
     padding-left: 57px;
     padding-right: 25px;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 #frontCard .logo img{
-    height: 50px;
+    height: 30px;
+   
 }
 /* BACK OF THE CARD */
 
 #backCard{
     background-color: #5019a1;
-    width: 600px;
-    height: 350px;
+    width: 500px;
+    height: 250px;
     justify-content: space-around;
     border-radius: 12px;
     display: flex;
@@ -139,37 +141,43 @@ body{
 
 .dataContainer{
     position: fixed;
-    top: 300px;
-    background-color: whitesmoke;
-    color: black;
-    height:600px;
-    width: 700px;
-    border-radius: 12px;
+    top: 250px;
+    color: white;
+    height:400px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.7px);
+    -webkit-backdrop-filter: blur(1.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .dataContainer .inContainer{
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-around;
-    height: 70%;
-    width: 90%;
+    justify-content: center;
+    height: 90%;
+    width: 95%;
 }
 
 .dataContainer .inContainer span{
-    
+    font-size: 20px;
     width: 97%;
     padding-left: 20px;
+    padding: 16px;
+    padding-left: 42px;
 }
 
 .dataContainer .inContainer input{
     width: 90%;
-    height: 35px;
+    height: 10px;
     border: 2px solid rgba(0, 0, 0, 0.219);
     padding: 10px;
     font-size: 25px;
@@ -179,6 +187,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 500px;
 }
 
 .dataContainer .inContainer .lastFields input{
@@ -200,10 +209,12 @@ body{
 
 #butsubmit{
     width: 200px;
-    height: 55px;
+    height: 45px;
     cursor: pointer;
     background-color: #721AFF;
     color: white;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 #butsubmit:hover{
