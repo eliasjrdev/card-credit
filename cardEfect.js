@@ -1,7 +1,7 @@
 // Elements of face card
-const card = document.querySelector('#mainContainer')
-const valueName = document.querySelector('#valueName')
-const valueNumber = document.querySelector('#valueNumber')
+const card = document.querySelector('#mainContainer') 
+const valueName = document.querySelector('#valueName') 
+const valueNumber = document.querySelector('#valueNumber')  
 const vDate = document.querySelector('#vDate')
 const cvvValueCard = document.querySelector('#cvvValueCard')
 
@@ -14,7 +14,7 @@ const butSubmit = document.querySelector('#butsubmit')
 
 
 //----------------------------------------------------//
-
+// add an input event for each data input and create a function to update this data on the face of the card dynamically//
 numberCard.addEventListener('input', updateNumberCard);
 nameCard.addEventListener('input', updateNameCard);
 cvv.addEventListener('input', updateCvv);
@@ -41,16 +41,6 @@ cvv.addEventListener('focus', ()=>{
     card.classList.toggle('flip')
 })
 
-
-
-
-/*
-butSubmit.addEventListener("click", ()=>{
-    valueNumber.innerHTML = numberCard.value
-    valueName.innerHTML = nameCard.value
-    vDate.innerHTML = validityDate.value
-    cvvValueCard.innerHTML = cvv.value
-})*/
 
 
 
