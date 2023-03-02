@@ -22,7 +22,9 @@ validityDate.addEventListener('input', updateValidityDate);
 
 
 function updateNumberCard(){
-    valueNumber.textContent = numberCard.value;
+    const cardNumber = numberCard.value.replace(/\s/g, '').replace(/(\d{4})/g, '$1 ').trim();
+    valueNumber.textContent = cardNumber;
+    //valueNumber.textContent = numberCard.value;
 }
 
 function updateNameCard(){
@@ -34,10 +36,18 @@ function updateCvv(){
 }
 
 function updateValidityDate(){
-    vDate.textContent = validityDate.value
+    const monthAndYear = validityDate.value;
+    const year = monthAndYear.slice(2, 4);
+    const month = monthAndYear.slice(5, 7);
+    const formattedDate = `${month}/${year}`;
+    vDate.textContent = formattedDate;
 }
 
 cvv.addEventListener('focus', ()=>{
+    card.classList.toggle('flip')
+})
+
+butSubmit.addEventListener('focus', ()=>{
     card.classList.toggle('flip')
 })
 

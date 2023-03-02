@@ -220,3 +220,45 @@ body{
 #butsubmit:hover{
     background-color: #2B0247;
 }
+
+/* RESPONSIVY */
+
+@media(max-width: 480px){
+    #mainContainer{
+        width: 100vw;
+        font-size: 15px;
+    }
+
+    img{
+        width: -70%;
+    }
+
+    #frontCard{
+        width: 90vw;
+        height: 180px;
+    }
+
+    #backCard{
+        width: 85vw;
+    }
+
+    #frontCard .logo img{
+        height: 20px;
+    }
+
+    .chip-and-number-logo img{
+        width: 50px;
+    }
+
+    #frontCard .chip-and-number{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 3px;
+    }
+
+    #frontCard .chip-and-number img{
+        height: 40px;
+        
+    }
+    
+}
