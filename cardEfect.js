@@ -21,10 +21,27 @@ cvv.addEventListener('input', updateCvv);
 validityDate.addEventListener('input', updateValidityDate);
 
 
-function updateNumberCard(){
+/*function updateNumberCard(){
     const cardNumber = numberCard.value.replace(/\s/g, '').replace(/(\d{4})/g, '$1 ').trim();
     valueNumber.textContent = cardNumber;
     //valueNumber.textContent = numberCard.value;
+}*/
+
+function updateNumberCard() {
+    const cardNumber = numberCard.value.replace(/\s/g, '').trim();
+    let displayNumber = '';
+    for (let i = 0; i < cardNumber.length; i++) {
+      if (i < 4 || i > 11) {
+        // mostra o primeiro e último 4 dígitos do cartão e oculta o restante com *
+        displayNumber += i < cardNumber.length ? cardNumber.charAt(i) : '*';
+      } else {
+        displayNumber += '•'; // oculta os dígitos do meio com um ponto
+      }
+      if ((i + 1) % 4 === 0 && i < 15) {
+        displayNumber += ' '; // adiciona um espaço a cada grupo de 4 caracteres
+      }
+    }
+    valueNumber.textContent = displayNumber;
 }
 
 function updateNameCard(){
