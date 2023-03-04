@@ -223,7 +223,7 @@ body{
 
 /* RESPONSIVY */
 
-@media(max-width: 505px){
+@media(max-width: 480px){
     #mainContainer{
         width: 100vw;
         font-size: 90%;
@@ -274,5 +274,9 @@ body{
     #frontCard .chip-and-number img{
         height: 90%;
     }
+    
+}
+
+@media (min-width: 480px) and (max-width: 768px){
     
 }
