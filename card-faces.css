@@ -223,10 +223,11 @@ body{
 
 /* RESPONSIVY */
 
-@media(max-width: 480px){
+@media(max-width: 505px){
     #mainContainer{
         width: 100vw;
-        font-size: 15px;
+        font-size: 90%;
+        height: 40%;
     }
 
     img{
@@ -235,7 +236,24 @@ body{
 
     #frontCard{
         width: 90vw;
-        height: 180px;
+        height: 85%;
+    }
+    
+    #frontCard .name{
+        padding-left: 7%;
+    }
+
+    #frontCard .logo{
+        padding-left: 7%;
+        height: 20%;
+    }
+
+    .chip-and-number-logo{
+        padding-left: 7%;
+    }
+
+    .chip-and-number-logo img{
+        width: 20%;
     }
 
     #backCard{
@@ -243,22 +261,18 @@ body{
     }
 
     #frontCard .logo img{
-        height: 20px;
-    }
-
-    .chip-and-number-logo img{
-        width: 50px;
+        height: 60%;
     }
 
     #frontCard .chip-and-number{
         display: flex;
         justify-content: space-between;
-        padding-left: 3px;
+        padding-left: 0%;
+        font-size: 60%;
     }
 
     #frontCard .chip-and-number img{
-        height: 40px;
-        
+        height: 90%;
     }
     
 }
