@@ -20,13 +20,6 @@ nameCard.addEventListener('input', updateNameCard);
 cvv.addEventListener('input', updateCvv);
 validityDate.addEventListener('input', updateValidityDate);
 
-
-/*function updateNumberCard(){
-    const cardNumber = numberCard.value.replace(/\s/g, '').replace(/(\d{4})/g, '$1 ').trim();
-    valueNumber.textContent = cardNumber;
-    //valueNumber.textContent = numberCard.value;
-}*/
-
 function updateNumberCard() {
     const cardNumber = numberCard.value.replace(/\s/g, '').trim();
     let displayNumber = '';
