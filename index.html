@@ -9,68 +9,64 @@
     <link rel="stylesheet" href="teste.css">
 </head>
 <body>
-    <div class="flip" id="mainContainer">
+    <div id="boxMain">
+        <div class="flip" id="mainContainer">
         
-        <div class="face" id="frontCard">
-            <div class="chip-and-number-logo">
-                <img src="images/css-logo-removebg-preview.png" alt="logo-image" >
-            </div>
-            <div class="chip-and-number">
-                
-            </div>
-            <div class="chip-and-number">
-                <img src="images/istockphoto-1193495658-170667a-removebg-preview.png" alt="chip image">
-                <span id="valueNumber"># # # # &nbsp; # # # # &nbsp; # # # # &nbsp; # # # #</span>
-            </div>
-
-            <div class="name">
-                <span id="valueName">Fulano de tal </span>
-                <div class="date">
-                    
+            <div class="face" id="frontCard">
+                <div class="chip-and-number-logo">
+                    <img src="images/css-logo-removebg-preview.png" alt="logo-image" >
                 </div>
-            </div>
-
-            <div class="logo">
-                <span id="vDate">00/00</span>
-                <img src="images/elo-servicos-sa-logo-3CAEF69C1F-seeklogo.com.png" alt="image-logo">
-            </div> 
-        </div>
+                <div class="chip-and-number">
         
-        <div id="backCard" class="face">
-            
-            <div class="inputCvv">
-                <div class="cvvNumber">
-                    cvv
-                    <div id="cvvValueCard">
-                        ###
+                </div>
+                <div class="chip-and-number">
+                    <img src="images/istockphoto-1193495658-170667a-removebg-preview.png" alt="chip image">
+                    <span id="valueNumber"># # # # &nbsp; # # # # &nbsp; # # # # &nbsp; # # # #</span>
+                </div>
+                <div class="name">
+                    <span id="valueName">Fulano de tal </span>
+                    <div class="date">
+        
                     </div>
                 </div>
-            </div>
-
-            <div class="magneticBar">
-
-            </div>
-        </div>
-        
-    </div>
-
-    <div class="dataContainer">
-        <div class="inContainer">
-            <span>Number Card</span>
-            <input type="text" name="numberCard" id="numberCard" maxlength="18">
-            
-            <span>Name Card</span>
-            <input type="text" name="nameCard" id="nameCard">
-            <span>Validity date</span>
-            <div class="lastFields">
-                <input type="month" name="validityDate" id="validityDate">
-                <div>
-                    cvv
-                    <input type="text" name="cvvCard" id="cvvInputCard" maxlength="3">
+                <div class="logo">
+                    <span id="vDate">00/00</span>
+                    <img src="images/elo-servicos-sa-logo-3CAEF69C1F-seeklogo.com.png" alt="image-logo">
                 </div>
             </div>
-
-            <input type="submit" value="Enviar" id="butsubmit">
+        
+            <div id="backCard" class="face">
+        
+                <div class="inputCvv">
+                    <div class="cvvNumber">
+                        cvv
+                        <div id="cvvValueCard">
+                            ###
+                        </div>
+                    </div>
+                </div>
+                <div class="magneticBar">
+                </div>
+            </div>
+        
+        </div>
+        <div class="dataContainer">
+            <div class="inContainer">
+                <span>Number Card</span>
+                <input type="text" name="numberCard" id="numberCard" maxlength="18">
+        
+                <span>Name Card</span>
+                <input type="text" name="nameCard" id="nameCard">
+                <span>Validity date</span>
+                <div class="lastFields">
+                    <input type="month" name="validityDate" id="validityDate">
+                    <div>
+                        cvv
+                        <input type="text" name="cvvCard" id="cvvInputCard" maxlength="3">
+                    </div>
+                </div>
+                <input type="submit" value="Enviar" id="butsubmit">
+            </div>
         </div>
     </div>
 </body>

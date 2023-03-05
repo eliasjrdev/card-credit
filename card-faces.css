@@ -10,14 +10,27 @@ body{
     height: 100vh;
     background: linear-gradient(#180326, #360259);
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     justify-content: center;
     color: white;
     font-size: 25px;
 }
 
+#boxMain{
+    position: relative;
+    width: 50%;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 #mainContainer{
-    width: 100vw;
-    padding-top: 30px;
+    width: 100%;
+    top: 3%;
     display: flex;
     justify-content: center;
     transition: all 1s;
@@ -140,8 +153,8 @@ body{
 /* FORM */
 
 .dataContainer{
-    position: fixed;
-    top: 250px;
+    position: relative;
+    top: 18%;
     color: white;
     height:400px;
     width: 600px;
@@ -224,6 +237,11 @@ body{
 /* RESPONSIVY */
 
 @media(max-width: 480px){
+    
+    #boxMain{
+        width: 95%;
+        height: 100%;
+    }
     #mainContainer{
         width: 100vw;
         font-size: 90%;
@@ -274,6 +292,45 @@ body{
     #frontCard .chip-and-number img{
         height: 90%;
     }
+
+    /*-------------------------------------*/
+
+    #backCard{
+        width: 90vw;
+        height: 85%;
+    }
+
+    .magneticBar{
+        width: 99%;
+    }
+
+    .cvvNumber{ 
+        width: 35%;
+    }
+
+    /*-------------------------------------*/
+
+    .dataContainer{
+        width: 99%;
+    }
+
+    .lastFields{
+        width: 90%;
+    }
+
+    .dataContainer .inContainer .lastFields{
+        width: 90%;
+    }
+    
+    .dataContainer .inContainer .lastFields input{
+        width: 100px;
+    }
+    
+    .dataContainer .inContainer .lastFields div{
+        width: 230px;
+        padding-left: 30px;
+    }
+
     
 }
 
