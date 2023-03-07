@@ -316,7 +316,7 @@ body{
     .dataContainer{
         width: 99%;
         height: 45%;
-        
+        top: 1%;
     }
 
     .dataContainer .inContainer input{
@@ -336,13 +336,15 @@ body{
     }
     
     .dataContainer .inContainer .lastFields input{
-        width: 100px;
+        width: 60px;
         height: 1px;
     }
-    
+
     .dataContainer .inContainer .lastFields div{
-        width: 230px;
-        padding-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 130px;
     }
 
     .dataContainer  #butsubmit{
