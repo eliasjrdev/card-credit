@@ -25,13 +25,13 @@ function updateNumberCard() {
     let displayNumber = '';
     for (let i = 0; i < cardNumber.length; i++) {
       if (i < 4 || i > 11) {
-        // mostra o primeiro e último 4 dígitos do cartão e oculta o restante com *
+        // show the first and last 4 digits of the card and hide the rest with *
         displayNumber += i < cardNumber.length ? cardNumber.charAt(i) : '*';
       } else {
-        displayNumber += '•'; // oculta os dígitos do meio com um ponto
+        displayNumber += '•'; // hide the middle digits with a dot
       }
       if ((i + 1) % 4 === 0 && i < 15) {
-        displayNumber += ' '; // adiciona um espaço a cada grupo de 4 caracteres
+        displayNumber += ' '; // add a space to each group of 4 characters
       }
     }
     valueNumber.textContent = displayNumber;
